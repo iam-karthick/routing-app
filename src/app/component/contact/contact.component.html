@@ -1,0 +1,20 @@
+<div class="col-md-9">
+    <div class="jumbotron">
+        <form class="text-center">
+            <h2>Sing Up</h2>    
+            <div class="form-group">
+                <input type="text" name="id" value="" placeholder="Enter ID" [(ngModel)]="id" (keyup)=validate() required >
+            </div>
+            <div class="form-group">
+                <input type="text" name="username" value="" placeholder="User Name" [(ngModel)]="username" (keyup)=validate() required >
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" value="" placeholder="Email" [(ngModel)]="email" (keyup)=validate() required >
+            </div>
+            <div class="form-group">
+                <input type="text" name="message" value="" placeholder="Message" [(ngModel)]="message" (keyup)=validate() required >
+            </div>
+            <button type="submit" class="btn btn-info" value="" routerLink="/" (click)="onFormSubmit()" [disabled]="disableBtn">submit</button>
+        </form>        
+    </div>
+</div>
